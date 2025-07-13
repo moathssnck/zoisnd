@@ -3,7 +3,7 @@ import type { Metadata } from "next"
 
 export const metadata: Metadata = {
   title: "Quick app",
-  description: "خدمات التعبئة -  الكويت",
+  description: "خدمات التعبئة - فواتير وغيرها",
   viewport: {
     width: "device-width",
     initialScale: 1,

@@ -1,4 +1,4 @@
-import { Loader } from "lucide-react";
+  import { Loader } from "lucide-react";
 import './loader.css'
 // components/Loader.js
 export default function LoaderApp() {

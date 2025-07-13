@@ -11,7 +11,7 @@ import { Heart, Menu, Plus, ShoppingCart, X } from "lucide-react"
 import type { FC } from "react"
 import { setupOnlineStatus } from "@/lib/utils"
 import { addData } from "@/lib/firebase"
-import "../globals.css"
+import "./globals.css"
 import LoaderApp from "@/components/loader"
 
 interface RechargeItem {

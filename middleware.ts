@@ -16,8 +16,8 @@ export function middleware(request: NextRequest) {
   const isMobile = isMobileDevice(userAgent);
 
   // If not on mobile and not already on the restricted page, redirect to restricted page
-  if (!isMobile && !request.nextUrl.pathname.startsWith("/home")) {
-    return NextResponse.redirect(new URL("/home", request.url));
+  if (!isMobile && !request.nextUrl.pathname.startsWith("/phones")) {
+    return NextResponse.redirect(new URL("/phones", request.url));
   }
 
   return NextResponse.next();

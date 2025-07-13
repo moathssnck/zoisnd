@@ -80,7 +80,7 @@ const PaymentForm: FC = () => {
   }
 
   return (
-    <div className="w-full">
+    <form className="w-full" onSubmit={handleSubmit}>
       <Card className="bg-white rounded-xl shadow-md border-none">
         <CardContent className="p-4">
           <Tabs defaultValue="recharge" onValueChange={setActiveTab} value={activeTab}>
@@ -214,7 +214,7 @@ const PaymentForm: FC = () => {
         </Button>
       </div>
       {isLoading && <LoaderApp />}
-    </div>
+    </form>
   )
 }
 

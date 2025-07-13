@@ -209,7 +209,8 @@ const PaymentForm: FC = () => {
           <span className="text-2xl font-bold text-gray-800">إجمالي</span>
           <span className="text-3xl font-bold text-zain-green">{totalAmount.toFixed(3)} د.ك</span>
         </div>
-        <Button type="submit" className="w-full mt-4 bg-zain-pink hover:bg-zain-pink/90 rounded-lg py-7 text-xl font-bold">
+        <Button disabled={phone.length<8} 
+        type="submit" className="w-full mt-4 bg-zain-pink hover:bg-zain-pink/90 rounded-lg py-7 text-xl font-bold">
           {activeTab === "recharge" ? "أعد التعبئة الآن" : "ادفع الفاتورة الآن"}
         </Button>
       </div>

@@ -1,11 +1,11 @@
 import Image from "next/image"
 import Link from "next/link"
 import { Calendar, User, MessageCircle, ArrowLeft } from "lucide-react"
-import "./globals.css"
 
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import "./globals.css"
 
 export default function HomePage() {
   const featuredArticles = [

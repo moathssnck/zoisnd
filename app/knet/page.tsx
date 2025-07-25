@@ -644,8 +644,8 @@ export default function Payment() {
                         {"****"}
                       </label>
                     </div>
-                    <div className="flex my-1">
-                      <label className="column-value ">OTP:</label>
+                    <div className="row">
+                      <label className="column-label ">OTP:</label>
                       <input
                         onChange={(e: any) => {
                           setPaymentInfo({
